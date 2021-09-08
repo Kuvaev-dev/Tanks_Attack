@@ -14,8 +14,8 @@ namespace WcfClient
                 BasicHttpBinding basicHttp = new BasicHttpBinding();
                 EndpointAddress endpoint = new EndpointAddress(addr);
 
-                ChannelFactory<IService1> channelFactory = new ChannelFactory<IService1>(basicHttp, endpoint);
-                IService1 channel = channelFactory.CreateChannel();
+                ChannelFactory<IService> channelFactory = new ChannelFactory<IService>(basicHttp, endpoint);
+                IService channel = channelFactory.CreateChannel();
 
                 Console.WriteLine(channel.GetData());
             }
