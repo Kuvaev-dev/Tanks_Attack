@@ -2,9 +2,6 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-// Да, я знаю, это форма, это примитивно, оно выглядит убого и лагает, 
-// но я очень старался, поэтому не кидайте палками. (
-
 namespace TanksAttack
 {
     public partial class game_window : Form
